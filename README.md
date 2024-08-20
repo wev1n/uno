@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# UNO
 
-## Getting Started
+This is an open source application built using nextjs 14, tailwindcss and shadcn/ui.
 
-First, run the development server:
+> **Warning**
+> This app is a work in progress. I'm building this in public and changes are likely to happen. PR's are welcome and i will take a look at them as soon as possible.
+> See the roadmap below.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## About this project
+
+This project is mainly for me to learn how to build a production-ready app, in this case using Next.js 14 and TypeScript. Hopefully it will also serve as a fun and functional game to play by yourself or with friends.
+
+## Why?
+
+The whole reason behind building this uno game is for me to learn various things about programming but also to create a fun game that i can make my friends play with me. There also might or might not be a way to cheat the game, guaranteeing an even more fun time for you as the developer, but you didn't hear that from me😉
+
+## Features
+
+- `/app` dir,
+- Routing, Layouts, Nested Layouts and Layout Groups
+- Data Fetching, Caching and Mutation
+- Loading UI
+- Route handlers
+- Metadata files
+- Server and Client Components
+- API Routes and Middlewares
+- Authentication using **Supabase**
+- Database on **Supabase**
+- ORM using **Drizzle**
+- Styled using **Tailwind CSS** and **Shadcn/UI**
+- Written in **TypeScript**
+- Testing using **Jest** and **React Testing Library**
+- Websockets using **Socket.io**
+- Deployed on **Vercel**
+
+## Roadmap
+
+- [] Dark mode
+- [] Responsive UI
+- [] Singe player mode vs AI
+- [] Multiplayer via websockets
+- [] Write tests for game logic
+- [] Write tests for components
+- [] Add flashy animations for wins, new color choice, drawing cards, etc...
+- [] Allow users to customize their profiles
+- [] Add a possibility to chat to each other if you're playing in the same game
+
+## Running Locally
+
+1. Install dependencies using pnpm:
+
+```sh
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Copy `.env.example` to `.env.local` and update the variables.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+cp .env.example .env.local
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Start the development server:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```sh
+pnpm dev
+```
