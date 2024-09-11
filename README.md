@@ -34,7 +34,7 @@ Feel free to explore and contribute to enhance this project!
 - **Responsive Design**: Optimized for desktop and mobile devices.
 - **Real-Time Game Logic**: Gameplay rules enforced with real-time updates.
 - **Customizable Rules**: Modify game rules such as card draw limits, house rules, etc.
-- **Chat System**: (Optional) In-game chat system to communicate with other players.
+- **Chat System**: In-game chat system to communicate with other players.
 
 _Please add any other features here, if applicable_
 
@@ -68,7 +68,7 @@ Ensure you have the following tools installed on your machine:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/uno.git
+git clone https://github.com/wev1n/uno.git
 ```
 
 2. Navigate to the project directory:
@@ -89,28 +89,28 @@ npm install
 cp .env.example .env.local
 ```
 
+_Please specify any required environment variables or secrets here_
+
 5. Run the development server:
 
 ```bash
  npm run dev
 ```
 
-_Please specify any required environment variables or secrets here_
-
 ## Game Rules & Mechanics
 
-The game adheres to standard Uno rules, but with some customizable options. Here’s a quick breakdown:
+The game adheres to standard Uno rules using a 108 card deck, but with some customizable options. Here’s a quick breakdown:
 
 1. **Number of Players**: 2 to 4 players.
-2. **Goal**: Be the first to score 500 points or get rid of all your cards.
+2. **Goal**: Be the first to score 500 points(Optional - can be customized) or get rid of all your cards.
 3. **Card Types**:
    - **Number Cards**: Simple cards with numbers ranging from 0 to 9.
    - **Action Cards**: Special cards like Reverse, Skip, Draw Two, etc.
    - **Wild Cards**: Wild and Wild Draw Four cards.
-4. **Turn Structure**: On each player's turn, they must play a card that matches the top card of the discard pile by either color or number, or play an action card.
+4. **Turn Structure**: On each player's turn, they must play a card that matches the top card of the discard pile by either color or number, or play an action card. If you cant play a card, you must draw a card/cards until you can play one.
 5. **Winning Condition**: The first player to discard all their cards wins the round, and the score is tallied based on remaining cards in other players' hands.
 
-You can customize the rules (if applicable) by navigating to the **Settings** page in the game interface.
+You can customize the rules by navigating to the **Settings** page in the game interface or simply create a new game with your new customized rules.
 
 ---
 
@@ -121,7 +121,7 @@ This section outlines the major components of the project.
 Feel free to dive into each folder for more details. Here is a short description of some key files:
 
 - **`/components/deck.tsx`**: Handles rendering the deck and card interactions.
-- **`/app/game-board.tsx`**: Main game page where players interact with the game.
+- **`/app/game-board/page.tsx`**: Main game page where players interact with the game.
 - **`/lib/game-logic.ts`**: Core game rules and logic.
 - **`/tests/game-logic.test.ts`**: Unit tests for the game logic.
 
